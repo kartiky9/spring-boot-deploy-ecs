@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "version.secrets",
+      "type": "java.lang.String",
+      "description": "A description for 'version.secrets'"
+    },
+    {
+      "name": "version.hardcoded",
+      "type": "java.lang.String",
+      "description": "A description for 'version.hardcoded'"
+    }
+  ]
+}
