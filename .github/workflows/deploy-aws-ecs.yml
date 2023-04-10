@@ -16,8 +16,8 @@ jobs:
       - uses: ./.github/build-docker
         name: build-backend
         with:
-          repository: ${{secrets.ECR_REPOSITORY}}
+          repository: ${{vars.ECR_REPOSITORY}}
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
-          ecr-registry: ${{secrets.ECR_REGISTRY}}
+          ecr-registry: ${{vars.ECR_REGISTRY}}
