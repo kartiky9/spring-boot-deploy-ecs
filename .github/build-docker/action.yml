@@ -43,7 +43,7 @@ runs:
       id: build-image
       shell: bash
       run: |
-        cd backend-services
+        cd backend
         docker build -t "${{ inputs.ecr-registry }}/${{ inputs.repository }}:${{ github.sha }}" -f ${{ inputs.dockerfile }} .
         # docker push "${{ inputs.ecr-registry }}/${{ inputs.repository }}:${{ github.sha }}"
         echo "::set-output name=image::${{ inputs.ecr-registry }}/${{ inputs.repository }}:${{ github.sha }}"
